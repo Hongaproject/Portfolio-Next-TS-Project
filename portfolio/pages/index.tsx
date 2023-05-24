@@ -1,13 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-// const inter = Inter({ subsets: ['latin'] })
+// import Title from './Title'
+
+import Head from "next/head"
+
 
 export default function Home() {
+
   return (
     <div>
-      <h1>홈 입니다.</h1>
+      {/* <Title profile="profile"/> */}
+      <Head>
+        <title>Profile | 소개 글</title>
+      </Head>
+      <h1>메인 입니다.</h1>
     </div>
   )
 }

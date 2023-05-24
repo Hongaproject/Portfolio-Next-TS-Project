@@ -1,0 +1,13 @@
+.Header{
+    background-color: beige;
+    /* width: 100%;
+    height: 300px; */
+}
+
+.NavbarUl{
+    display: flex;
+}
+
+.NavbarUl li{
+    margin-left: 40px;
+}
