@@ -1,27 +1,9 @@
-.profileM {
-  background-color: aquamarine;
-  height: 300px;
-  
+.content {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.img{
-  background-color: bisque;
-  display: flex;
-}
-
-.title{
-  background-color: red;
-  height: 50px;
-}
-
-.content{
-  background-color: brown;
-  height: 200px;
-  margin-left: 100px;
-  width: 100%;
-}
-
-.intro{
-  background-color: darkkhaki;
-  height: 50px;
+.projectB{
+    margin-bottom: 20px;
 }
