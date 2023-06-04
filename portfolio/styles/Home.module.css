@@ -1,15 +1,30 @@
+.section{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .introduction{
     margin-top: 20px;
     padding: 0 20px;
-    background-color: aquamarine;
 }
 
 .content {
     display: flex;
+    min-height: calc(100vh - 100px);
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0 20px;
-    background-color: bisque;
+    /* background-color: bisque; */
+    align-items: center;
+    justify-content: center;
+}
+.subContent{
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -19,30 +34,25 @@
 }
 
 .titleContent{
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-    padding: 10px 20px;
+    /* background-color: aqua; */
+    padding: 20px;
+
 }
 
 .title{
-    background-color: skyblue;
-    margin-bottom: 20px;
-    line-height: 30px;
+    /* background-color: skyblue; */
+    margin-bottom: 30px;
 }
 
 .subTitle{
-    background-color: pink;
-    margin-bottom: 20px;
-    line-height: 30px;
+    /* background-color: pink; */
 }
 
 .link{
-    background-color: chartreuse;
-    line-height: 30px;
+    /* background-color: chartreuse; */
 }
+
 .projectB{
-    margin-bottom: 20px;
     padding: 0 20px;
-    background-color: brown;
+    /* background-color: brown; */
 }

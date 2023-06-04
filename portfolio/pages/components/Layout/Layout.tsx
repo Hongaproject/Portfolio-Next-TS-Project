@@ -8,7 +8,7 @@ type MainProps = {
 export default function Layout({children}: MainProps) {
     return(
         <div>
-            <Header />
+            <Header href={""} />
                 <div>
                     {children}
                 </div>
