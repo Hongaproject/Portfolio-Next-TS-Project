@@ -1,9 +1,44 @@
+.introduction{
+    margin-top: 20px;
+    padding: 0 20px;
+    background-color: aquamarine;
+}
+
 .content {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 0 20px;
+    background-color: bisque;
 }
 
+.img{
+    margin-right: 20px;
+}
+
+.titleContent{
+    background-color: aqua;
+    padding: 10px 20px;
+}
+
+.title{
+    background-color: skyblue;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.subTitle{
+    background-color: pink;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.link{
+    background-color: chartreuse;
+    line-height: 30px;
+}
 .projectB{
     margin-bottom: 20px;
+    padding: 0 20px;
+    background-color: brown;
 }
