@@ -10,6 +10,8 @@
     margin-bottom: 20px;
     padding: 0 20px;
     background-color: bisque;
+    align-items: center;
+    justify-content: center;
 }
 
 .img{
@@ -17,6 +19,8 @@
 }
 
 .titleContent{
+    align-items: center;
+    justify-content: center;
     background-color: aqua;
     padding: 10px 20px;
 }
