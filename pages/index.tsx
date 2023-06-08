@@ -60,7 +60,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold mt-5">
           안녕하세요 프론트엔드 개발자 홍성원의 포트폴리오 입니다.
         </h1>
-        <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center justify-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img className="object-cover object-center rounded " src="/photo.jpg" />
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Links</h1>
             <Links />
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> 프로젝트 보러가기</button>
+              <button className="inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={clickProject}> 프로젝트 보러가기</button>
             </div>
           </div>
         </div>

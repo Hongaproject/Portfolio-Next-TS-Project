@@ -7,7 +7,7 @@ type MainProps = {
 
 export default function Layout({children}: MainProps) {
     return(
-        <div>
+        <div className=".bg-color">
             <Header href={""} />
                 <div>
                     {children}
