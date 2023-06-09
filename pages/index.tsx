@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Skills from "./components/SkillsImg/Skills";
 import Links from "./components/LinkImg/Links";
+import TypeIt from "typeit-react";
 
 export default function Home() {
   
@@ -57,9 +58,16 @@ export default function Home() {
         <Head>
           <title>홍성원 | 프론트엔드 개발자 </title>
         </Head>
-        <h1 className="text-3xl font-bold mt-5">
+        {/* <h1 className="text-3xl font-bold mt-5">
           안녕하세요 프론트엔드 개발자 홍성원의 포트폴리오 입니다.
-        </h1>
+        </h1> */}
+        <TypeIt className="text-3xl font-bold mt-5"
+        options={{
+          strings: ["안녕하세요 프론트엔드 개발자 홍성원의 포트폴리오 입니다."],
+          speed: 70,
+          waitUntilVisible: true,
+        }}
+      />
         <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center justify-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img className="object-cover object-center rounded " src="/photo.jpg" />
