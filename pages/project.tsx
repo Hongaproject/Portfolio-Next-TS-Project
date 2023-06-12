@@ -2,34 +2,37 @@ import Head from "next/head";
 import { SECRETS, DATABASE_ID, SECRETS_SUB, DATABASE_SUB_ID } from "@/config/setup";
 import ProjectItem from "./components/projectItem/projectItem";
 import SubProjectItem from "./components/projectItem/SubProjectItem";
-
-// export default function Project({projectNames}: Projectnames) {
-
-//     console.log(projectNames);
+import type { GetStaticProps } from 'next';
+import { useEffect, useState } from "react";
+import Loading from "./loading";
 
 type Projectnames = {
     projects: any;
     results: any;
     subProjects: any;
-
-//   stargazers_count: number;
 };
 
 export default function Project({projects, subProjects}: Projectnames) {
 
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+        setLoading(false);
+    },[]);
+    
     return(
-        <div className="flex flex-col min-h-screen px-3 mb-10">
+        <div className=" flex flex-col min-h-screen  mb-10 ">
+            { loading ? <Loading /> : null }
             <Head>
                 <title>홍성원 | 프로젝트 </title>
             </Head>
-            {/* <h1>총 프로젝트 : {projectNames} </h1> */}
 
-            <h1 className="text-4xl font-bold sm:text-6xl text-center">
+            <h1 className="text-4xl font-bold sm:text-6xl text-center mt-6">
                 총 프로젝트 : 
                 <span className="pl-4 text-blue-500">{projects.results.length} </span>
             </h1>
             <h3 className="text-2xl mt-12 ml-4 mb-1 font-bold">메인 프로젝트</h3>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {projects.results.slice(0,4).map((project: {id: { properties: { Name: { title: { plain_text: any; }[]; }; }; }; }) => (
                     <ProjectItem data={project} key={project.id}/>
                 ))}
@@ -44,9 +47,6 @@ export default function Project({projects, subProjects}: Projectnames) {
     );
 }
 
-
-import type { GetStaticProps } from 'next';
- 
 
 export const getStaticProps: GetStaticProps<{
     projects: Projectnames;

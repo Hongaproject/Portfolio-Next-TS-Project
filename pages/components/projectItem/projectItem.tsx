@@ -23,8 +23,7 @@ export default function ProjectItem({data}: Data) {
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date?.start
     const end = data.properties.WorkPeriod.date?.end
-     
-
+    
     return(
         <div className="project-card">
             <Image 
@@ -34,7 +33,7 @@ export default function ProjectItem({data}: Data) {
                 width="100" 
                 height="100" 
                 layout="responsive"
-                objectFit="none"
+                objectFit="cover"
                 quality={100}
             />
             
@@ -45,11 +44,11 @@ export default function ProjectItem({data}: Data) {
                     작업기간 : {start} ~ {end} 
                 </p>
                 <a href={github} target="_blank" className=" mt-2">깃허브 바로가기</a>
-                <div className="flex items-start mt-2">
-                    {tags.map((aTag: { id: Key | null | undefined; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | PromiseLikeOfReactNode | null | undefined; }) => (
-                        <p className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 break-all " key={aTag.id}>{aTag.name}</p>
-                    ))}
-                </div>
+                    <div className="flex items-start mt-2">
+                        {tags.map((aTag: { id: Key | null | undefined; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | PromiseLikeOfReactNode | null | undefined; }) => (
+                            <p className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700" key={aTag.id}>{aTag.name}</p> 
+                        ))}
+                    </div>
             </div>
         </div>
         
