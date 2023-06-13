@@ -1,6 +1,6 @@
 import Head from "next/head"
 import { useRouter } from "next/router";
-import Skills from "./components/SkillsImg/Skills";
+import Skills from "./components/Skill/Skills";
 import Links from "./components/LinkImg/Links";
 import TypeIt from "typeit-react";
 import { useEffect, useState } from "react";
@@ -36,7 +36,7 @@ export default function Home() {
       />
         <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center justify-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img className="object-cover object-center rounded " src="/photo.jpg" />
+            <img className="object-cover object-center rounded rounded-3xl " src="/photo.jpg" />
           </div>
           <div className="flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">홍성원</h1>

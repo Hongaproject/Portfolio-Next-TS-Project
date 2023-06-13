@@ -21,7 +21,7 @@ export default function Project({projects, subProjects}: Projectnames) {
     },[]);
     
     return(
-        <div className=" flex flex-col min-h-screen  mb-10 ">
+        <div className=" flex flex-col min-h-screen mb-10 m-6 px-6">
             { loading ? <Loading /> : null }
             <Head>
                 <title>홍성원 | 프로젝트 </title>
@@ -31,17 +31,22 @@ export default function Project({projects, subProjects}: Projectnames) {
                 총 프로젝트 : 
                 <span className="pl-4 text-blue-500">{projects.results.length} </span>
             </h1>
-            <h3 className="text-2xl mt-12 ml-4 mb-1 font-bold">메인 프로젝트</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {projects.results.slice(0,4).map((project: {id: { properties: { Name: { title: { plain_text: any; }[]; }; }; }; }) => (
-                    <ProjectItem data={project} key={project.id}/>
-                ))}
-            </div>
-            <h3 className="text-2xl mt-6 ml-4 mb-1 font-bold">서브 프로젝트</h3>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-4 ">
-                {subProjects.results.map((subproject: {id: { properties: { Name: { title: { plain_text: any; }[]; }; }; }; }) => (
-                    <SubProjectItem datas={subproject} key={subproject.id}/>
-                ))}
+            <div className="">
+                <h3 className="text-2xl mt-16 ml-4 mb-1 font-bold">메인 프로젝트</h3>
+
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
+                    {projects.results.slice(0,4).map((project: {id: { properties: { Name: { title: { plain_text: any; }[]; }; }; }; }) => (
+                        <ProjectItem data={project} key={project.id}/>
+                    ))}
+                </div>
+
+                <h3 className="text-2xl mt-6 ml-4 mb-1 font-bold">서브 프로젝트</h3>
+
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-4 ">
+                    {subProjects.results.map((subproject: {id: { properties: { Name: { title: { plain_text: any; }[]; }; }; }; }) => (
+                        <SubProjectItem datas={subproject} key={subproject.id}/>
+                    ))}
+                </div>
             </div>
         </div>
     );
