@@ -1,17 +1,12 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image"
 import { Key, ReactElement, JSXElementConstructor, ReactFragment, ReactPortal, PromiseLikeOfReactNode } from "react";
+import SkillImg from "../Skill/skillsImg/skillImg";
 
 type Data = {
     data : any;
-    properties : any;
-    Name : any;
-    title : any;
-    plain_text : any;
-    cover: any;
-    start: any;
-    end: any;
-    split: any;
+    
 }
 
 export default function ProjectItem({data}: Data) {
@@ -24,6 +19,8 @@ export default function ProjectItem({data}: Data) {
     const start = data.properties.WorkPeriod.date?.start
     const end = data.properties.WorkPeriod.date?.end
     const notion = data.properties.Notion.url
+    const skillimg = data.properties.Skills.files
+
     
     return(
         <div className="project-card">
@@ -37,15 +34,26 @@ export default function ProjectItem({data}: Data) {
                 objectFit="cover"
                 quality={100}
             />
-            <div className="p-4 flex flex-col">
+            <div className="p-4 flex flex-col ">
                 <h1 className="text-2xl font-bold">{title}</h1>
+                <div className="flex items-start mt-2">
+                    {skillimg && skillimg.map((tagSkill: {file: any; url: any;})=>(
+                        <Image 
+                            className="flex-wrap"
+                            src={tagSkill.file.url} 
+                            alt={"picture"} 
+                            width="24" 
+                            height="24"                
+                        />
+                    ))}
+                </div>
                 <a href={notion} target="_blank" className="font-bold underline mt-2">자세히 보기</a>
                 <p className="my-1 mt-2 ">작업기간 : {start} ~ {end} </p>
                 <h3 className="">{description}</h3>
-                <a href={github} target="_blank" className=" mt-2"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/github.png" alt="github"/></a>
-                    {/* <div className="flex items-start mt-2 break-all">
+                <a href={github} target="_blank" className="mt-2"><img className="float-right" width="24" height="24" src="https://img.icons8.com/material-outlined/24/github.png" alt="github"/></a>
+                    {/* <div className="flex flex-wrap items-start mt-2">
                         {tags.map((aTag: { id: Key | null | undefined; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | PromiseLikeOfReactNode | null | undefined; }) => (
-                            <p className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 " key={aTag.id}>{aTag.name}</p> 
+                            <p className="px-2 py-1 mr-1 mt-2 rounded-md bg-sky-200 dark:bg-sky-700 " key={aTag.id}>{aTag.name}</p> 
                         ))}
                     </div> */}
             </div>
