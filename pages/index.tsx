@@ -26,6 +26,7 @@ export default function Home() {
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
         { loading ? <Loading /> : null}
         <Head>
+          <link rel="icon" href="/favicon.ico"/>
           <title>홍성원 | 프론트엔드 개발자 </title>
         </Head>
         <TypeIt className="text-3xl font-bold mt-8"
@@ -41,7 +42,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900 ">홍성원</h1>
-              <p className="mb-3 leading-relaxed font-bold text-xl ml-0.5 ">
+              <p className="mb-8 leading-relaxed font-bold text-xl ml-0.5 ">
                 {/* 꾸준히 학습하여 성장하는 개발자 홍성원 입니다.
                 "실패를 두려워하지 않고 항상 도전하고 배우자"라는 목표를 가지고 
                 웹 개발과 관련된 다양한 분야를 학습 중 입니다. <br /> <br /> */}
@@ -61,7 +62,8 @@ export default function Home() {
                 그리고 진행했던 내용을 깃허브에 1일 1커밋하고 있으며, <br />
                 블로그에도 한 달에 평균적으로 2개씩 포스팅하고 있습니다.  
               </p>
-            <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">Skills</h1>
+            <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900 w-full" title="아이콘 클릭 시 모달창이 나옵니다.">Skills</h1>
+            <p className="underline">아이콘 클릭 시 모달창이 나옵니다.</p>
             <Skills />
             <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">Links</h1>
             <Links />

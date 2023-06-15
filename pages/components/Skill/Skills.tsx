@@ -10,7 +10,7 @@ export default function Skills() {
     }
 
     return(
-        <div className="mb-3 leading-relaxed sm:w-full">
+        <div className="mb-8 leading-relaxed sm:w-full">
             <button onClick={clickExplain}>
                 <div className="flex flex-wrap ">
                     <img src="/html.png" width="48" height="48" alt="html5" title="HTML5" />
@@ -22,6 +22,8 @@ export default function Skills() {
                     <img src="/tailwind.png" className="mr-1.5" width="48" height="48" alt="tailwind" title="Tailwind" />
                     <img src="/mui.png" width="48" height="48" alt="mui" title="Material-UI" />
                     <img src="/bootstrap.png" width="48" height="48" alt="bootstrap" title="Bootstrap" />
+                    <img src="/github.png" width="48" height="48" alt="github" title="Github" />
+                    <img src="/notion.png" width="48" height="48" alt="notion" title="Notion" />
                 </div>
             </button>
             {modal === true ? <SkillExplain /> : null }
