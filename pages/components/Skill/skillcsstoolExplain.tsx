@@ -26,7 +26,6 @@ export default function SkillcsstoolExplain(){
     const Div = styled.div`
         margin:5px 0px 30px 10px ;
     `
-    
     return(
         <Container>
             {csstool.map((list)=>(

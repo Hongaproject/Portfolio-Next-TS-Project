@@ -41,7 +41,7 @@ export default function Home() {
             <img className="object-cover object-center rounded rounded-3xl " src="/photo.jpg" />
           </div>
           <div className="flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900 ">홍성원</h1>
+            <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900 ">홍성원</h1>
               <p className="mb-8 leading-relaxed text-xl ml-0.5 ">
                 {/* 꾸준히 학습하여 성장하는 개발자 홍성원 입니다.
                 "실패를 두려워하지 않고 항상 도전하고 배우자"라는 목표를 가지고 
@@ -62,10 +62,10 @@ export default function Home() {
                 그리고 진행했던 내용을 <strong>깃허브에 1일 1커밋하고 있으며, <br />
                 블로그에도 한 달에 평균적으로 2개씩 포스팅하고 있습니다.</strong>  
               </p>
-            <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900 w-full" title="아이콘 클릭 시 모달창이 나옵니다.">Skills</h1>
+            <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900 w-full" title="아이콘 클릭 시 모달창이 나옵니다.">Skills</h1>
             <p className="underline">아이콘 클릭 시 모달창이 나옵니다.</p>
             <Skills />
-            <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">Links</h1>
+            <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900">Links</h1>
             <Links />
             <div className="flex justify-center">
               <button className="inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={clickProject}> 프로젝트 보러가기</button>
