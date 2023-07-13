@@ -18,6 +18,7 @@ export default function Home() {
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
         <Head>
           <link rel="icon" href="./favicon.ico"/>
+          <meta property="og:image" content="/photo.jpg" />
           <title>홍성원 | 프론트엔드 개발자 </title>
         </Head>
         <TypeIt className="text-3xl font-bold mt-8"

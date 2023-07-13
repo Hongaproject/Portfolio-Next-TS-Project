@@ -21,7 +21,7 @@ export default function ProjectItem({data}: Data) {
 
     return(
         <div className="project-card">
-            <a href=""><Image 
+            <Image 
                 className="rounded-t-xl" 
                 src={img} 
                 alt={"picture"} 
@@ -30,7 +30,7 @@ export default function ProjectItem({data}: Data) {
                 layout="responsive"
                 objectFit="cover"
                 quality={100}
-            /></a>
+            />
             <div className="p-4 flex flex-col flex-wrap">
                 <h1 className="text-2xl font-bold">{title}</h1>
                 
