@@ -7,15 +7,15 @@ type Data = {
 
 export default function ProjectItem({data}: Data) {
 
-    const title = data.properties?.Name.title[0].plain_text
-    const description = data.properties?.Description?.rich_text[0]?.plain_text
-    const github = data.properties?.Github.url
-    const website = data.properties?.Website?.url
-    const img = data.cover?.file?.url || data.cover?.external.url
-    const start = data.properties?.WorkPeriod.date?.start
-    const end = data.properties?.WorkPeriod.date?.end
-    const notion = data.properties?.Notion.url
-    const skillimg = data.properties?.Skills.files
+    const title = data?.properties?.Name.title[0].plain_text
+    const description = data?.properties?.Description?.rich_text[0]?.plain_text
+    const github = data?.properties?.Github.url
+    const website = data?.properties?.Website?.url
+    const img = data?.cover?.file?.url || data?.cover?.external.url
+    const start = data?.properties?.WorkPeriod.date?.start
+    const end = data?.properties?.WorkPeriod.date?.end
+    const notion = data?.properties?.Notion.url
+    const skillimg = data?.properties?.Skills.files
     
     console.log(skillimg);
 
