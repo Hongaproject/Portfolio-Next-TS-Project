@@ -34,6 +34,7 @@ export default function Home() {
           <div className="flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900 ">홍성원</h1>
               <p className="mb-8 leading-relaxed text-xl ml-0.5 ">
+                
                 <strong>실패를 두려워하지 않고 항상 도전하고 배우는 개발자 홍성원입니다.</strong><br /> <br /> 
                 꾸준한 개발 성장을 위해 <strong>JavaScript, React, TypeScript, Next.js</strong>에 관하여 <br />
                 <strong>올해 1월부터 개인 공부 및 3개의 스터디를 참여</strong>하여 학습했던 내용들 위주로 <br /> 
