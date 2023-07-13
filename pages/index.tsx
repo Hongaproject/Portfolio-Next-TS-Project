@@ -4,29 +4,20 @@ import { useRouter } from "next/router";
 import Skills from "./components/Skill/Skills";
 import Links from "./components/LinkImg/Links";
 import TypeIt from "typeit-react";
-import { useEffect, useState } from "react";
-import Loading from "./loading";
 
 export default function Home() {
   
   const router = useRouter();
 
-  const [loading, setLoading] = useState(true);
-
   const clickProject = () => {
     router.push('./project');
   }
 
-  useEffect(() =>{
-    setLoading(false);
-  }, []);
-
   return (
       
       <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
-        { loading ? <Loading /> : null}
         <Head>
-          <link rel="icon" href="/favicon.ico"/>
+          <link rel="icon" href="./favicon.ico"/>
           <title>홍성원 | 프론트엔드 개발자 </title>
         </Head>
         <TypeIt className="text-3xl font-bold mt-8"
@@ -43,22 +34,10 @@ export default function Home() {
           <div className="flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900 ">홍성원</h1>
               <p className="mb-8 leading-relaxed text-xl ml-0.5 ">
-                {/* 꾸준히 학습하여 성장하는 개발자 홍성원 입니다.
-                "실패를 두려워하지 않고 항상 도전하고 배우자"라는 목표를 가지고 
-                웹 개발과 관련된 다양한 분야를 학습 중 입니다. <br /> <br /> */}
-
                 <strong>실패를 두려워하지 않고 항상 도전하고 배우는 개발자 홍성원입니다.</strong><br /> <br /> 
-
-                {/* 사용자의 입장에서 원하는 기능과 해결해야 할 문제점을 찾고 <br />
-                정확하게 구현하기 위해 새로운 기술을 공부 합니다.<br /> <br />  */}
-
-                {/* 꾸준한 개발 성장을 위해 자바스크립트, 리액트, 타입스크립트, 넥스트에 관하여 <br />
-                올해 1월부터 개인 공부 및 3개의 스터디를 참여하여 학습을 했습니다. <br /> <br /> */}
-
                 꾸준한 개발 성장을 위해 <strong>JavaScript, React, TypeScript, Next.js</strong>에 관하여 <br />
                 <strong>올해 1월부터 개인 공부 및 3개의 스터디를 참여</strong>하여 학습했던 내용들 위주로 <br /> 
                 프로젝트를 진행했습니다. <br /> <br />
-
                 그리고 진행했던 내용을 <strong>깃허브에 1일 1커밋하고 있으며, <br />
                 블로그에도 한 달에 평균적으로 2개씩 포스팅하고 있습니다.</strong>  
               </p>

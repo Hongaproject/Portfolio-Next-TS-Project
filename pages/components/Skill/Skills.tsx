@@ -4,20 +4,9 @@ import SkillcsstoolExplain from "./skillcsstoolExplain";
 import { styled } from "styled-components";
 
 export default function Skills() {
-
-    // const [modal, setModal] = useState(false);
-    // const [ctmodal, setCTmodal] =useState(false);
-   
-    // const clickFront = () => {
-    //     setModal(!modal);
-    // }
-
-    // const clickCT = () => {
-    //     setCTmodal(!ctmodal);
-    // }
-
-    const [modal, setModal] = useState(null);
-    const [ctmodal, setCTmodal] =useState(null);
+    
+    const [modal, setModal] = useState<boolean>(false);
+    const [ctmodal, setCTmodal] = useState<boolean>(true);
 
     const clickFront = () => {
         setModal(true);
@@ -56,7 +45,7 @@ export default function Skills() {
                 {
                     submodal &&
                     <div ref={outside} onClick={ (e) => { if(e.target == outside.current) setsubModal(false) } }>
-                        <button onClick={ () => setsubModal(false) } className="float-right"><strong>닫기</strong></button>
+                        <button onClick={ () => setsubModal(false) } className="float-right mr-14 mt-1"><img width="24" height="24" src="https://img.icons8.com/material/24/kiw0k-☀️【官网dk2000com】⬅️-5yad7-dmc109uua/close-window--v1.png" alt="close-window--v1"/></button>
                         <div>
                             {modal === null && ctmodal === null ? null : ctmodal && modal ?  <SkillcsstoolExplain />  :  <SkillfrontExplain /> }
                         </div>
