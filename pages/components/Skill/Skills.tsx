@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import SkillfrontExplain from "./skillfrontExplain";
 import SkillcsstoolExplain from "./skillcsstoolExplain";
-import { styled } from "styled-components";
 
 export default function Skills() {
     
