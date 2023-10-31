@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { SECRETS, DATABASE_ID, SECRETS_SUB, DATABASE_SUB_ID } from "@/config/setup";
+import { SECRETS, DATABASE_ID} from "@/config/setup";
 import ProjectItem from "./components/projectItem/projectItem";
 import type { GetStaticProps } from 'next';
 import { Key, useEffect, useState } from "react";
@@ -18,7 +18,7 @@ export default function Project({projects}: Projectnames) {
    useEffect(()=>{
     setTimeout(()=>{
         setLoading(false);
-    },6000);
+    },3000);
    },[]);
 
         
@@ -34,8 +34,7 @@ export default function Project({projects}: Projectnames) {
             </h1>
             <div className="w-11/12 m-auto">
                 <h3 className="text-2xl mt-8 ml-4 mb-1 font-bold">메인 프로젝트</h3>
-
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
                     {projects.results.slice(0,4).map((project: { id: React.Key | null | undefined; }) => (
                         <ProjectItem data={project} key={project.id}/>
                     ))}

@@ -41,8 +41,8 @@ export default function Home() {
                 꾸준한 개발 성장을 위해 <strong>JavaScript, React, TypeScript, Next.js</strong>에 관하여 <br />
                 <strong>올해 1월부터 개인 공부 및 3개의 스터디를 참여</strong>하여 학습했던 내용들 위주로 <br /> 
                 프로젝트를 진행했습니다. <br /> <br />
-                그리고 진행했던 내용을 <strong>깃허브에 1일 1커밋하고 있으며, <br />
-                블로그에도 한 달에 평균적으로 2개씩 포스팅하고 있습니다.</strong>  
+                그리고 개인 공부 내용을 <strong>깃허브에 1일 1커밋하고 있으며, <br />
+                블로그에도 한 달에 평균적으로 2개씩 토이 프로젝트 및 공부 내용을 포스팅하고 있습니다.</strong>  
               </p>
             <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900 w-full" title="아이콘 클릭 시 모달창이 나옵니다.">Skills</h1>
             <p className="underline">아이콘 클릭 시 모달창이 나옵니다.</p>

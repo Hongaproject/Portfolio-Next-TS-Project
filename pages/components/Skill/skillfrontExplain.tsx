@@ -7,7 +7,7 @@ export default function SkillfrontExplain(){
     const frontEnd = [
         {
             title:"html&css",
-            content:"시멘틱 마크업과 웹표준을 준수하며 레이아웃 구현에 능숙합니다."
+            content:"시멘틱 마크업과 레이아웃 및 애니메이션 구현에 능숙합니다."
         },
         {
             title:"JavaScript",

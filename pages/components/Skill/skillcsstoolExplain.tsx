@@ -6,6 +6,10 @@ export default function SkillcsstoolExplain(){
 
     const csstool = [
         {
+            title:"Node JS, Mysql",
+            content:"express를 사용하여 서버 실행 및 API를 사용해서 data처리해본 경험이 있습니다. Workbench를 사용해서 DataBase를 작성하고 CRUD를 이용해 React와 Next JS에 적용해서 데이터 관리를 할 수 있습니다."
+        },
+        {
             title:"TailwindCSS, Material-UI, Bootstrap",
             content:"css파일 없이 작업이 가능하며 다양한 플랫폼을 사용가능 하여 실제 여러 프로젝트 프로젝트에서 사용했습니다. (포트폴리오, 코백)제작 "
         },
@@ -17,7 +21,7 @@ export default function SkillcsstoolExplain(){
 
     const Container = styled.div`
         width: 500px;
-        height: 250px;
+        height: 410px;
         border: 1px solid;
         box-shadow: 2px 2px 2px 2px gray;
         justify-content: center;

@@ -35,7 +35,6 @@ export default function ProjectItem({data}: Data) {
                 <h1 className="text-2xl font-bold">{title}</h1>
                 
                 <div className="flex items-start mt-2">
-                        
                         {skillimg?.map((tagSkill: {idx: Key | null | undefined; file: any; url: any;})=>(
                             <Image 
                             key={tagSkill.idx}
