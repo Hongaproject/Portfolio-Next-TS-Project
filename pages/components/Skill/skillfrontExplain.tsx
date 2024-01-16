@@ -6,8 +6,8 @@ export default function SkillfrontExplain(){
 
     const frontEnd = [
         {
-            title:"html&css",
-            content:"시멘틱 마크업과 레이아웃 및 애니메이션 구현에 능숙합니다."
+            title:"CSS",
+            content:"TailwindCSS, Material-UI, Bootstrap, styled-component를 사용할 수 있습니다. "
         },
         {
             title:"JavaScript",
@@ -15,21 +15,21 @@ export default function SkillfrontExplain(){
         },
         {
             title:"TypeScript",
-            content:"개발에 생산성을 향상 시켜주었으며 interface로 타입을 지정 할 수 있고 실제 여러 프로젝트에서 사용한 경험이 있습니다. (포트폴리오, 코백, 로또 번호 추출기)제작 "
+            content:"개발에 생산성을 향상 시켜주었으며 interface로 타입을 지정 할 수 있고 실제 여러 프로젝트에서 사용한 경험이 있습니다. (포트폴리오, 코백)제작 "
         },
         {
             title:"React",
-            content:"사용자 인터페이스를 더 편리하게 만들기 위해 공부를 시작했으며 Functional Component, Hook, Styled-Component를 사용하여 실제 여러 프로젝트에서 사용한 경험이 있습니다. (프로젝트 마이페이지)제작"
+            content:"사용자 인터페이스를 더 편리하게 만들기 위해 공부를 시작했으며 Functional Component, Hook, Styled-Component를 사용하여 실제 여러 프로젝트에서 사용한 경험이 있습니다. (개인 공부, 마이페이지, ASK)제작"
         },
         {
             title:"Next.js",
-            content:"React의 단점을 보완하고 SEO와 SSR을 사용가능 하여 공부를 시작했으며 실제 여러 프로젝트에서 사용한 경험이 있습니다. (포트폴리오, 코백, 로또 번호 추출기)제작 "
+            content:"React의 단점을 보완하고 SEO와 SSR을 사용가능 하여 공부를 시작했으며 실제 여러 프로젝트에서 사용한 경험이 있습니다. (포트폴리오, 코백)제작 "
         }
     ] 
 
     const Container = styled.div`
         width: 500px;
-        height: 600px;
+        height: 630px;
         border: 1px solid;
         box-shadow: 2px 2px 2px 2px gray;
         justify-content: center;

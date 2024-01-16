@@ -18,7 +18,7 @@ export default function Project({projects}: Projectnames) {
    useEffect(()=>{
     setTimeout(()=>{
         setLoading(false);
-    },3000);
+    },2000);
    },[]);
 
         

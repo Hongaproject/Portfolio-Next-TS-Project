@@ -39,7 +39,7 @@ export default function Home() {
                 
                 <strong>실패를 두려워하지 않고 항상 도전하고 배우는 개발자 홍성원입니다.</strong><br /> <br /> 
                 꾸준한 개발 성장을 위해 <strong>JavaScript, React, TypeScript, Next.js</strong>에 관하여 <br />
-                <strong>올해 1월부터 개인 공부 및 3개의 스터디를 참여</strong>하여 학습했던 내용들 위주로 <br /> 
+                <strong>23년 3월부터 개인 공부 및 3개의 스터디를 참여</strong>하여 학습했던 내용들 위주로 <br /> 
                 프로젝트를 진행했습니다. <br /> <br />
                 그리고 개인 공부 내용을 <strong>깃허브에 1일 1커밋하고 있으며, <br />
                 블로그에도 한 달에 평균적으로 2개씩 토이 프로젝트 및 공부 내용을 포스팅하고 있습니다.</strong>  
@@ -50,7 +50,7 @@ export default function Home() {
             <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900">Links</h1>
             <Links />
             <div className="flex justify-center">
-              <button className="inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={clickProject}> 프로젝트 보러가기</button>
+              <button className="inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={clickProject}> 프로젝트 보러가기</button>
             </div>
           </div>
         </div>
