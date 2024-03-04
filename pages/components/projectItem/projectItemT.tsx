@@ -7,13 +7,13 @@ type Data = {
 
 export default function ProjectItemT({data}: Data) {
 
-    const title = data[1]?.properties.Name.title[0].plain_text;
-    const description = data[1]?.properties.Description.rich_text[0].plain_text;
-    const notion = data[1]?.properties.Notion.url;
-    const start = data[1]?.properties.WorkPeriod.date.start;
-    const end = data[1]?.properties.WorkPeriod.date.end;
-    const website = data[1]?.properties.Website.url;
-    const github = data[1]?.properties.Github.url;
+    const title = data[1]?.properties?.Name.title[0].plain_text;
+    const description = data[1]?.properties?.Description?.rich_text[0]?.plain_text;
+    const notion = data[1]?.properties?.Notion.url;
+    const start = data[1]?.properties?.WorkPeriod.date?.start;
+    const end = data[1]?.properties?.WorkPeriod.date?.end;
+    const website = data[1]?.properties?.Website?.url;
+    const github = data[1]?.properties?.Github.url;
 
     
     return(

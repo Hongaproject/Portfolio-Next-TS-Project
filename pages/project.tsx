@@ -26,7 +26,7 @@ export default function Project({projects}: Projectnames) {
 
     // if(loading) return <div>...로딩중</div>
 
-    // console.log(projects);
+    console.log(projects.results.id);
         
     return(
         <div className=" flex flex-col min-h-screen mb-10 m-6">
