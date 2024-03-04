@@ -5,7 +5,7 @@ type Data = {
     data : any;
 }
 
-export default function ProjectItem1({data}: Data) {
+export default function ProjectItemT({data}: Data) {
 
     const title = data[1].properties.Name.title[0].plain_text;
     const description = data[1].properties.Description.rich_text[0].plain_text;

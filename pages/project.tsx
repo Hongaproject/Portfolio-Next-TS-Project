@@ -1,11 +1,10 @@
 import Head from "next/head";
 import { SECRETS, DATABASE_ID} from "@/config/setup";
-import ProjectItem from "./components/projectItem/projectItem";
+import ProjectItemF from "./components/projectItem/projectItemF";
 import type { GetStaticProps } from 'next';
 import { Key, useEffect, useState } from "react";
-import Loading from "./loading";
-import ProjectItem1 from "./components/projectItem/projectItem1";
-import ProjectItem2 from "./components/projectItem/projectItem2";
+import ProjectItemT from "./components/projectItem/projectItemT";
+import ProjectItemTr from "./components/projectItem/projectItemTr";
 
 type Projectnames = {
     projects: any;
@@ -39,9 +38,9 @@ export default function Project({projects}: Projectnames) {
             <div className="w-11/12 m-auto">
                 <h3 className="text-2xl mt-8 ml-4 mb-1 font-bold">메인 프로젝트</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    <ProjectItem data={projects.results} />
-                    <ProjectItem1 data={projects.results} />
-                    <ProjectItem2 data={projects.results} />
+                    <ProjectItemF data={projects.results} />
+                    <ProjectItemT data={projects.results} />
+                    <ProjectItemTr data={projects.results} />
                 </div>
             </div>
             

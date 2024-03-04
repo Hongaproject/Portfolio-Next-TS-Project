@@ -5,21 +5,22 @@ type Data = {
     data : any;
 }
 
-export default function ProjectItem2({data}: Data) {
+export default function ProjectItemF({data}: Data) {
 
-    const title = data[2].properties.Name.title[0].plain_text;
-    const description = data[2].properties.Description.rich_text[0].plain_text;
-    const notion = data[2].properties.Notion.url;
-    const start = data[2].properties.WorkPeriod.date.start;
-    const end = data[2].properties.WorkPeriod.date.end;
-    const website = data[2].properties.Website.url;
-    const github = data[2].properties.Github.url;
-    
+    const title = data[0].properties.Name.title[0].plain_text;
+    const description = data[0].properties.Description.rich_text[0].plain_text;
+    const notion = data[0].properties.Notion.url;
+    const start = data[0].properties.WorkPeriod.date.start;
+    const end = data[0].properties.WorkPeriod.date.end;
+    const website = data[0].properties.Website.url;
+    const github = data[0].properties.Github.url;
+
+
     return(
         <div className="project-card">
             <Image 
                 className="rounded-t-xl" 
-                src="/korea.png" 
+                src="/pf.png" 
                 alt={"picture"} 
                 width="100" 
                 height="100" 
@@ -30,12 +31,12 @@ export default function ProjectItem2({data}: Data) {
             <div className="p-4 flex flex-col flex-wrap">
                 <h1 className="text-2xl font-bold">{title}</h1>
                 <div className="flex flex-wrap items-start mt-2">
-                    <Image src="/react.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/js.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/nextjs.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/ts.png" alt={"picture"} width="24" height="24" />
                     <Image src="/tailwind.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/redux.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/notion.png" alt={"picture"} width="24" height="24" />
                     <Image src="/github.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/aws.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/vercel.png" alt={"picture"} width="24" height="24" />
                 </div>
                 <a href={notion} target="_blank" className="font-bold underline mt-2">자세히 보기</a>
                 <p className="my-1 mt-2 ">작업기간 : {start} ~ {end} </p>
