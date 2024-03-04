@@ -7,15 +7,13 @@ type Data = {
 
 export default function ProjectItemF({data}: Data) {
 
-    const title = data.properties.Name.title[0].plain_text;
-    const description = data.properties.Description.rich_text[0].plain_text;
-    const notion = data.properties.Notion.url;
-    const start = data.properties.WorkPeriod.date.start;
-    const end = data.properties.WorkPeriod.date.end;
-    const website = data.properties.Website.url;
-    const github = data.properties.Github.url;
-
-    console.log(data);
+    const title = data?.properties.Name.title[0].plain_text;
+    const description = data?.properties.Description.rich_text[0].plain_text;
+    const notion = data?.properties.Notion.url;
+    const start = data?.properties.WorkPeriod.date.start;
+    const end = data?.properties.WorkPeriod.date.end;
+    const website = data?.properties.Website.url;
+    const github = data?.properties.Github.url;
 
     return(
         <div className="project-card">
