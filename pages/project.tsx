@@ -4,6 +4,8 @@ import ProjectItem from "./components/projectItem/projectItem";
 import type { GetStaticProps } from 'next';
 import { Key, useEffect, useState } from "react";
 import Loading from "./loading";
+import ProjectItem1 from "./components/projectItem/projectItem1";
+import ProjectItem2 from "./components/projectItem/projectItem2";
 
 type Projectnames = {
     projects: any;
@@ -13,31 +15,33 @@ type Projectnames = {
 
 export default function Project({projects}: Projectnames) {
 
-   const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(false);
 
-   useEffect(()=>{
-    setTimeout(()=>{
-        setLoading(false);
-    },2000);
-   },[]);
+    // const load = () => {
+    //     setLoading(true);
+    // }
+    
+    // useEffect(()=>{
+    //     setLoading(false);
+    // },[]);
 
+    // if(loading) return <div>...로딩중</div>
+
+    // console.log(projects);
         
     return(
         <div className=" flex flex-col min-h-screen mb-10 m-6">
             <Head>
                 <title>홍성원 | 프로젝트 </title>
             </Head>
-            {loading ? <Loading /> : "" }
-            <h1 className="text-4xl font-bold sm:text-6xl text-center mt-6 ">
-                총 프로젝트 : 
-                <span className="pl-4 text-blue-500">{projects.results.length} </span>
-            </h1>
+            {/* {loading ? <Loading /> : "" } */}
+            
             <div className="w-11/12 m-auto">
                 <h3 className="text-2xl mt-8 ml-4 mb-1 font-bold">메인 프로젝트</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    {projects.results.slice(0,4).map((project: { id: React.Key | null | undefined; }) => (
-                        <ProjectItem data={project} key={project.id}/>
-                    ))}
+                    <ProjectItem data={projects.results} />
+                    <ProjectItem1 data={projects.results} />
+                    <ProjectItem2 data={projects.results} />
                 </div>
             </div>
             

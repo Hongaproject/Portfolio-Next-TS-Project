@@ -28,8 +28,8 @@ export default function SkillfrontExplain(){
     ] 
 
     const Container = styled.div`
-        width: 500px;
-        height: 630px;
+        width: 700px;
+        height: 550px;
         border: 1px solid;
         box-shadow: 2px 2px 2px 2px gray;
         justify-content: center;

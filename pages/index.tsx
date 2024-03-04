@@ -24,7 +24,7 @@ export default function Home() {
         </Head>
         <TypeIt className="text-3xl font-bold mt-8"
         options={{
-          strings: ["안녕하세요 프론트엔드 개발자 홍성원의 포트폴리오 입니다."],
+          strings: ["실패를 두려워하지 않고 항상 도전하고 배우는 개발자 홍성원입니다."],
           speed: 70,
           waitUntilVisible: true,
         }}
@@ -36,11 +36,14 @@ export default function Home() {
           <div className="flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-1 font-medium text-gray-900 ">홍성원</h1>
               <p className="mb-8 leading-relaxed text-xl ml-0.5 ">
+                <strong>
+                개발 시에 화면에 바로 나타나는 것이 흥미롭게 다가왔고 <br />
+                새로운 기능이나 효율적인 방법을 접했을 때 <br />개발자로써 성장하고 싶다는 생각을 가지게 되었습니다.  <br /><br />
+                </strong>
                 
-                <strong>실패를 두려워하지 않고 항상 도전하고 배우는 개발자 홍성원입니다.</strong><br /> <br /> 
-                꾸준한 개발 성장을 위해 <strong>JavaScript, React, TypeScript, Next.js</strong>에 관하여 <br />
-                <strong>23년 3월부터 개인 공부 및 3개의 스터디를 참여</strong>하여 학습했던 내용들 위주로 <br /> 
-                프로젝트를 진행했습니다. <br /> <br />
+                사용자에게 좋은 경험을 주기 위해 <strong>새로운 기술을 능동적으로 학습하고 있으며</strong> <br />
+                협업을 하면서 소통의 부재로 <strong>커뮤니케이션의 중요성</strong>을 깨닫게 되었으며    <br />
+                <strong>꾸준한 개발 성장</strong>을 위해 현재도 프로젝트를 진행하고 있습니다.<br /> <br />
                 그리고 개인 공부 내용을 <strong>깃허브에 1일 1커밋하고 있으며, <br />
                 블로그에도 한 달에 평균적으로 2개씩 토이 프로젝트 및 공부 내용을 포스팅하고 있습니다.</strong>  
               </p>

@@ -5,22 +5,22 @@ type Data = {
     data : any;
 }
 
-export default function ProjectItem({data}: Data) {
+export default function ProjectItem1({data}: Data) {
 
-    const title = data[0].properties.Name.title[0].plain_text;
-    const description = data[0].properties.Description.rich_text[0].plain_text;
-    const notion = data[0].properties.Notion.url;
-    const start = data[0].properties.WorkPeriod.date.start;
-    const end = data[0].properties.WorkPeriod.date.end;
-    const website = data[0].properties.Website.url;
-    const github = data[0].properties.Github.url;
+    const title = data[1].properties.Name.title[0].plain_text;
+    const description = data[1].properties.Description.rich_text[0].plain_text;
+    const notion = data[1].properties.Notion.url;
+    const start = data[1].properties.WorkPeriod.date.start;
+    const end = data[1].properties.WorkPeriod.date.end;
+    const website = data[1].properties.Website.url;
+    const github = data[1].properties.Github.url;
 
-
+    
     return(
         <div className="project-card">
             <Image 
                 className="rounded-t-xl" 
-                src="/pf.png" 
+                src="/cointop.png" 
                 alt={"picture"} 
                 width="100" 
                 height="100" 
@@ -33,8 +33,10 @@ export default function ProjectItem({data}: Data) {
                 <div className="flex flex-wrap items-start mt-2">
                     <Image src="/nextjs.png" alt={"picture"} width="24" height="24" />
                     <Image src="/ts.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/tailwind.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/notion.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/bootstrap.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/mui.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/recoil.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/mysql.png" alt={"picture"} width="24" height="24" />
                     <Image src="/github.png" alt={"picture"} width="24" height="24" />
                     <Image src="/vercel.png" alt={"picture"} width="24" height="24" />
                 </div>
