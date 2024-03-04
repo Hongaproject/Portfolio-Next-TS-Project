@@ -7,13 +7,13 @@ type Data = {
 
 export default function ProjectItemTr({data}: Data) {
 
-    const title = data[2].properties.Name.title[0].plain_text;
-    const description = data[2].properties.Description.rich_text[0].plain_text;
-    const notion = data[2].properties.Notion.url;
-    const start = data[2].properties.WorkPeriod.date.start;
-    const end = data[2].properties.WorkPeriod.date.end;
-    const website = data[2].properties.Website.url;
-    const github = data[2].properties.Github.url;
+    const title = data.properties.Name.title[0].plain_text;
+    const description = data.properties.Description.rich_text[0].plain_text;
+    const notion = data.properties.Notion.url;
+    const start = data.properties.WorkPeriod.date.start;
+    const end = data.properties.WorkPeriod.date.end;
+    const website = data.properties.Website.url;
+    const github = data.properties.Github.url;
     
     return(
         <div className="project-card">

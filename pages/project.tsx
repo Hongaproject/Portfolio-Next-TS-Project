@@ -26,6 +26,8 @@ export default function Project({projects}: Projectnames) {
 
     // if(loading) return <div>...로딩중</div>
 
+    console.log(projects.results);
+
     return(
         <div className=" flex flex-col min-h-screen mb-10 m-6">
             <Head>
@@ -36,20 +38,11 @@ export default function Project({projects}: Projectnames) {
             <div className="w-11/12 m-auto">
                 <h3 className="text-2xl mt-8 ml-4 mb-1 font-bold">메인 프로젝트</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    <ProjectItemF data={projects?.results} key={projects.results[0].id}/>
-                    <ProjectItemT data={projects?.results} key={projects.results[1].id}/>
-                    <ProjectItemTr data={projects?.results} key={projects.results[2].id}/>
+                    <ProjectItemF data={projects?.results[0]} key={projects?.results[0].id}/>
+                    <ProjectItemT data={projects?.results[1]} key={projects?.results[1].id}/>
+                    <ProjectItemTr data={projects?.results[2]} key={projects?.results[2].id}/>
                 </div>
             </div>
-
-            {/* <div className="w-11/12 m-auto">
-                <h3 className="text-2xl mt-8 ml-4 mb-1 font-bold">메인 프로젝트</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    {projects.results.slice(0,4).map((project: { id: React.Key | null | undefined; }) => (
-                        <ProjectItemF data={project} key={project.id}/>
-                    ))}
-                </div>
-            </div> */}
         </div>
     );
 }
