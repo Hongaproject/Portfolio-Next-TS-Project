@@ -5,7 +5,7 @@ type Data = {
     data : any;
 }
 
-export default function ProjectItemTr({data}: Data) {
+export default function ProjectItemFo({data}: Data) {
 
     const title = data?.properties.Name.title[0].plain_text;
     const description = data?.properties.Description.rich_text[0].plain_text;
@@ -19,7 +19,7 @@ export default function ProjectItemTr({data}: Data) {
         <div className="project-card">
             <Image 
                 className="rounded-t-xl" 
-                src="/korea.png" 
+                src="/x-coding.png" 
                 alt={"picture"} 
                 width="100" 
                 height="100" 
@@ -32,9 +32,9 @@ export default function ProjectItemTr({data}: Data) {
                 <div className="flex flex-wrap items-start mt-2">
                     <Image src="/react.png" alt={"picture"} width="24" height="24" />
                     <Image src="/js.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/tailwind.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/css.png" alt={"picture"} width="24" height="24" />
                     <Image src="/github.png" alt={"picture"} width="24" height="24" />
-                    <Image src="/vercel.png" alt={"picture"} width="24" height="24" />
+                    <Image src="/firebase.png" alt={"picture"} width="24" height="24" />
                 </div>
                 <a href={notion} target="_blank" className="font-bold underline mt-2">자세히 보기</a>
                 <p className="my-1 mt-2 ">작업기간 : {start} ~ {end} </p>
